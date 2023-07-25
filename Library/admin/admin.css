@@ -1,0 +1,560 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.myheader{
+  position: sticky !important;
+  top: 0;
+  z-index: 20;
+  background-color: #061b55;
+  transition: all 0.3s;
+  background-color: #061b55;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+}
+.navbar{
+  margin: 0px;
+  padding: 0px;
+}
+.title-left{
+  cursor: pointer;  
+  margin-left: 10px;
+  display: flex;
+  letter-spacing: 1px;
+}
+.title-left img{
+  margin-top: 0px;
+  width: 45px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.heading{
+  margin-bottom: 0;
+  margin-top: 0px;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.logoname p{
+  font-size: 10px;
+  margin: 0;
+  color: white;
+  font-weight: 400;
+}
+
+.title-right{
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
+  margin-left: auto;
+  display: inline-flex;
+}
+.title-right .title-buttons ul{
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 140px;
+  z-index: 1;
+  background-color: whitesmoke;
+}
+
+.dropdown-content a{
+  font-size: 14px !important;
+  color: black !important;
+  display: block;
+  padding: 5px 10px;
+}
+.dropdown-content a:hover{
+  background-color: white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.title-right .title-buttons ul li a{
+    font-size: 16px;
+    border-bottom: none;
+    text-decoration:none;
+    color: white;
+    font-family: 'Arial Nova', sans-serif;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+}
+.title-right .title-buttons ul li i {
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.title-right .title-buttons .menu li{
+  color: white;
+  display: inline-block;
+  padding: 10px 10px;
+  text-align: center;
+  cursor: pointer ;
+  height: 100%;
+}
+.title-right .title-buttons .menu li:hover{
+  color: #f10665;
+  background-color: #f1f1f1;
+}
+.title-right .title-buttons .menu li:hover a{
+  color: #f10665;
+}
+
+
+
+
+.dashboard-items{
+  margin-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 190px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: whitesmoke;
+}
+
+.item-img img{
+  height: 100px;
+}
+.item-img{
+  margin-bottom: 5px;
+}
+
+.item p{
+  text-align: center;
+  margin: 0px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #707070;
+}
+
+
+.dashboard-ss {
+  padding: 10px;
+  border: 1px solid #9494;
+  height: auto;
+}
+
+.sss select{
+  width: 250px;
+}
+
+.table{
+  margin: 0;
+}
+.sss{
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sss-table{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.ssss {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-book-content{
+  padding: 0;
+}
+
+.form-content{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-content input, .form-content label {
+  font-weight: bold;
+  margin: 10px;
+}
+
+.form-content input,select{
+  outline: none;
+  width: 400px;
+  padding: 3px 10px;
+  font-size: 15px;
+}
+
+.form-content span{
+  color: red;
+}
+
+.form-content input:focus {
+  border: 1px solid #38a9f0;
+  -webkit-box-shadow: 0px 0px 5px rgba(56, 169, 240, 0.75);
+  -moz-box-shadow: 0px 0px 5px rgba(56, 169, 240, 0.75);
+  box-shadow: 0px 0px 5px rgba(56, 169, 240, 0.75);
+}
+
+.add-book-btn,.issue-book-btn,.editbtn {
+  color: white;
+  border-color: #46b8da;
+  background-color: #5bc0de;
+  margin-top: 0px;
+  padding:5px 12px;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.tableactions .decline{
+  color: white;
+  background-color: crimson;
+  border: 1px solid #9494;
+  padding: 5px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.tableactions .decline:hover{
+  background-color: crimson;
+  filter: brightness(0.9);
+}
+.add-book-btn:hover{
+  background-color: #5bc0de;
+  filter: brightness(0.9);
+}
+.issue-book-btn:hover{
+  background-color: #5bc0de;
+  filter: brightness(0.9);
+}
+.editbtn:hover{
+  color: white;
+  background-color: #5bc0de;
+  filter: brightness(0.9);
+}
+
+.subbtn{
+  display: flex;
+  justify-content: center;
+}
+
+.ss-header{
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  background-color: whitesmoke;
+  text-transform: uppercase;
+  color: #310D20;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+
+.dashboard-ss{
+  padding: 10px;
+  border: 1px solid #9494;
+
+}
+
+#mngbooks-trow img{
+  height: 100px;
+  width: 100px;
+}
+
+#mngbooks-trow h3{
+  margin-left: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #310D20;
+  letter-spacing: 1px;
+}
+
+.tablebook{
+  display: flex;
+  align-items: center;
+}
+.sss-table{
+  overflow-x: auto;
+}
+.issue-form-content{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.issue-form-content input, .form-content label {
+  font-weight: bold;
+  margin: 10px;
+}
+
+.issue-form-content input,select{
+  outline: none;
+  width: 400px;
+  padding: 3px 10px;
+  font-size: 15px;
+}
+
+.issue-form-content span{
+  color: red;
+}
+
+.issue-form-content input:focus {
+  border: 1px solid #38a9f0;
+  -webkit-box-shadow: 0px 0px 4px rgba(56, 169, 240, 0.75);
+  -moz-box-shadow: 0px 0px 4px rgba(56, 169, 240, 0.75);
+  box-shadow: 0px 0px 4px rgba(56, 169, 240, 0.75);
+}
+
+.dashboard,.admin-books,.mngbooks,.issuebook,.mngissue,.ad-profile,.mngstudents,.mngfaculty,.currentissue,.issuerequests,.renewalrequests,.recomendations,.allbooks{
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding: 10px;
+  height: auto;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.dashboard-header,.add-book-header,.mngbooks-header,.issue-book-header,.mngissue-header,.ad-profile-header{
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #310D20;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+
+.dashboard-hr,.add-book-hr,.mngbooks-hr,.issue-book-hr,.mngissue-hr{
+  background-color: #310D20;
+  height: 2px;
+  margin: 10px 0px 10px 0px;
+}
+
+.ad-profile-hr{
+  background-color: #310D20;
+  height: 2px;
+  margin: 0px 0px 0px 0px;
+}
+
+.ad-profile-photo{
+  margin: 10px;
+  text-align: center;
+}
+.ad-profile-left-hr{
+  float: right;
+  height: 300px;
+  width: 2px;
+  background-color: #310D20;
+}
+
+.ad-info p{
+  font-size: 16px;
+  color: #707070;
+  margin: 10px;
+}
+.tablebookname{
+  display: none;
+}
+.ad-name h2{
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #310D20;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+
+@media (max-width: 480px) {
+  .item{
+    width: 120px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .item-img img{
+    height: 70px;
+  }
+  .item-img{
+    margin-bottom: 5px;
+  }
+  .item p{
+    font-size: 12px;
+  }
+
+}
+@media (max-width: 801px) {
+  .item{
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .item-img img{
+    height: 70px;
+  }
+  .item-img{
+    margin-bottom: 5px;
+  }
+  .item p{
+    font-size: 12px;
+  }
+  .sss-table{
+    overflow-x: auto;
+    font-size: 12px;
+  }
+  .dashboard-ss {
+  padding: 0px;
+  }
+  .sss select{
+    padding: 0;
+    font-size: 10px;
+    height: 24px;
+    width: 60px;
+  }
+  .sss{
+    padding: 5px;
+    font-size: 12px;
+  }
+  .ssss {
+    font-size: 12px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dashboard,.admin-books,.mngbooks,.issuebook,.mngissue,.ad-profile,.mngstudents,.mngfaculty,.currentissue,.issuerequests,.renewalrequests,.recomendations,.allbooks{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    padding: 5px;
+  }
+
+  .tablebook{
+    display: none;
+  }
+  .tablebookname{
+    display: block;
+  }
+  #mngbooks-trow h3{
+    margin-left: 5px;
+    font-size: 12px;
+  }
+  .tableactions button{
+    font-size: 12px;
+    margin-bottom: 5px;
+    padding:3px 5px;
+    border-radius: 4px;
+  }
+  .tableactions a{
+    padding: 3px 5px;
+  }
+  .tablebookname{
+    display: none;
+  }
+  .ad-profile-photo{
+    margin: 5px;
+  }
+  .ad-profile-left-hr{
+    display: none;
+  }
+  .ad-info p{
+    text-align: center;
+    font-size: 12px;
+    margin: 5px;
+  }
+  .ad-profile-photo img{
+    height: 100px;
+    width: 100px;
+  }
+  .ad-name h2{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #310D20;
+    letter-spacing: 1px;
+    font-weight: bolder;
+  }
+  .ad-profile-header{
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .dashboard,.admin-books,.mngbooks,.issuebook,.mngissue,.ad-profile,.mngstudents,.mngfaculty,.currentissue,.issuerequests,.renewalrequests,.recomendations,.allbooks{
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100% !important;
+  }
+  .form-content{
+    padding: 0px;
+    font-size: 12px;
+  }
+
+  .form-content input, .form-content label {
+    margin: 5px;
+  }
+
+  .form-content input,select{
+    width: 200px;
+    padding: 2px 5px;
+    font-size: 12px;
+  }
+  .add-book-header{
+    font-size: 15px;
+    margin: 0;
+  }
+  .add-book-hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .ss-header{
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .tableactions button{
+    padding:3px 5px;
+    border-radius: 4px;
+  }
+  .tableactions a{
+    margin-top: 5px;
+    padding: 3px 5px;
+  }
+  .ad-profile-photo img{
+    height: 120px;
+    width: 120px;
+  }
+  .item{
+    width: 140px;
+    padding: 5px;
+    margin: 5px;
+  }
+}
